@@ -236,19 +236,36 @@ state-of-the-art or to match published numbers.
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
-The MVTec AD dataset is licensed under CC BY-NC-SA 4.0. See
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for full attribution.
+The MVTec AD dataset is licensed under **CC BY-NC-SA 4.0**. Dataset images are not included in this repository. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution and licensing information.
+
+---
+
+## About the Author
+
+**Yahia Eid**  
+Machine Learning & Data Science | Computer Vision & Deep Learning
+
+Recent Graduate in **Public Policy Information Systems (PPIS)**, Faculty of Commerce, **Assiut University, Egypt (2026)**.
+
+Interested in developing practical AI solutions, with a focus on Machine Learning, Computer Vision, Deep Learning, and Intelligent Systems.
+
+**GitHub:** [@yahia1610](https://github.com/yahia1610)
+
+**Project Repository:** [AnomalyScope AI](https://github.com/yahia1610/AnomalyScope-AI)
+
+---
+
+## Project Maintainer
+
+AnomalyScope AI is an independent machine learning project developed and maintained by **Yahia Eid**. It focuses on implementing, evaluating, and comparing industrial visual anomaly detection methods using PyTorch, with an interactive Streamlit dashboard for visual analysis and model comparison.
 
 ---
 
 ## Citation
 
-If you use AnomalyScope AI in your research, please cite:
+If you use AnomalyScope AI in your research or projects, please cite:
 
 ```bibtex
-@software{anomalyscope2026,
-  title  = {AnomalyScope AI: Industrial Visual Anomaly Detection},
-  year   = {2026},
-  url    = {https://github.com/anomalyscope-ai/AnomalyScope-AI}
-}
-```
+@software{eid2026anomalyscope,
+  author  = {Eid, Yahia},
+  title   = {Anomaly
