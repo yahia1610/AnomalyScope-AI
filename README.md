@@ -247,7 +247,7 @@ Machine Learning & Data Science | Computer Vision & Deep Learning
 
 Recent Graduate in **Public Policy Information Systems (PPIS)**, Faculty of Commerce, **Assiut University, Egypt (2026)**.
 
-Interested in developing practical AI solutions, with a focus on Machine Learning, Computer Vision, Deep Learning, and Intelligent Systems.
+specialized in developing practical AI solutions, with a focus on Machine Learning, Computer Vision, Deep Learning, and Intelligent Systems.
 
 **GitHub:** [@yahia1610](https://github.com/yahia1610)
 
