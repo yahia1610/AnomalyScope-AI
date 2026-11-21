@@ -1,0 +1,50 @@
+{
+  "model_name": "PaDiM",
+  "category": "bottle",
+  "image_auroc": 0.996031746031746,
+  "pixel_auroc": 0.9831179976665901,
+  "aupro": 0.9313391326035644,
+  "threshold": 15.062019729614262,
+  "threshold_fpr": 0.023809523809523808,
+  "threshold_precision": 0.9833333333333333,
+  "threshold_recall": 0.9365079365079365,
+  "threshold_f1": 0.9593495934959351,
+  "threshold_accuracy": 0.9397590361445783,
+  "num_train_samples": 209,
+  "num_test_samples": 83,
+  "train_time_sec": 86.91181239997968,
+  "inference_time_sec": 37.56483930000104,
+  "total_time_sec": 166.6669181000034,
+  "per_defect_results": {
+    "broken_large": 0.5,
+    "broken_small": 0.5,
+    "contamination": 0.5
+  },
+  "checkpoint_path": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints\\smoke_test\\padim_bottle.pth",
+  "config": {
+    "dataset_root": "C:\\Users\\khaa5\\industrial-visual-anomaly-detection\\data\\mvtec_ad",
+    "category": "bottle",
+    "image_size": 256,
+    "batch_size": 32,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints",
+    "output_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\outputs",
+    "model": {
+      "name": "padim",
+      "backbone": "resnet18",
+      "layers_to_extract": [
+        "layer1",
+        "layer2",
+        "layer3"
+      ],
+      "num_features": 100,
+      "epsilon": 0.01
+    }
+  },
+  "num_fit_samples": 167,
+  "num_calibration_samples": 42,
+  "calibration_split": 0.2,
+  "calibration_seed": 42
+}

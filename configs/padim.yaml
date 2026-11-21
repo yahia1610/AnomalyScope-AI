@@ -1,0 +1,6 @@
+model:
+  name: "padim"
+  backbone: "resnet18"
+  layers_to_extract: ["layer1", "layer2", "layer3"]
+  num_features: 100  # after random dimensionality reduction
+  epsilon: 0.01  # covariance regularization

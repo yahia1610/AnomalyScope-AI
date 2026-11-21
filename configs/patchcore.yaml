@@ -1,0 +1,7 @@
+model:
+  name: "patchcore"
+  backbone: "wide_resnet50_2"
+  layers_to_extract: ["layer2", "layer3"]
+  coreset_ratio: 0.01  # fraction of patches to keep
+  num_neighbors: 9  # for re-weighting
+  pool_size: 3  # local-aware aggregation

@@ -1,0 +1,54 @@
+{
+  "model_name": "Autoencoder",
+  "category": "bottle",
+  "image_auroc": 0.765079365079365,
+  "pixel_auroc": 0.6293501124829171,
+  "aupro": 0.44383370258409965,
+  "threshold": 0.6452046117186547,
+  "threshold_fpr": 0.023809523809523808,
+  "threshold_precision": 1.0,
+  "threshold_recall": 0.5238095238095238,
+  "threshold_f1": 0.6875000000000001,
+  "threshold_accuracy": 0.6385542168674698,
+  "num_train_samples": 209,
+  "num_test_samples": 83,
+  "train_time_sec": 11251.704679699964,
+  "inference_time_sec": 20.731429699982982,
+  "total_time_sec": 11308.559392599971,
+  "per_defect_results": {
+    "broken_large": 0.5,
+    "broken_small": 0.5,
+    "contamination": 0.5
+  },
+  "checkpoint_path": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints\\experiments\\autoencoder_bottle\\autoencoder_bottle.pth",
+  "config": {
+    "dataset_root": "C:\\Users\\khaa5\\industrial-visual-anomaly-detection\\data\\mvtec_ad",
+    "category": "bottle",
+    "image_size": 256,
+    "batch_size": 32,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints",
+    "output_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\outputs",
+    "model": {
+      "name": "autoencoder",
+      "latent_channels": 256,
+      "encoder_channels": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "learning_rate": 0.0001,
+      "weight_decay": 1e-05,
+      "epochs": 200,
+      "scheduler_step": 50,
+      "scheduler_gamma": 0.5
+    }
+  },
+  "num_fit_samples": 167,
+  "num_calibration_samples": 42,
+  "calibration_split": 0.2,
+  "calibration_seed": 42
+}

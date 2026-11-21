@@ -1,0 +1,51 @@
+{
+  "model_name": "PaDiM",
+  "category": "hazelnut",
+  "image_auroc": 0.8492857142857143,
+  "pixel_auroc": 0.9826759637426269,
+  "aupro": 0.8515221162060096,
+  "threshold": 16.62375100135803,
+  "threshold_fpr": 0.01282051282051282,
+  "threshold_precision": 0.8769230769230769,
+  "threshold_recall": 0.8142857142857143,
+  "threshold_f1": 0.8444444444444444,
+  "threshold_accuracy": 0.8090909090909091,
+  "num_train_samples": 391,
+  "num_test_samples": 110,
+  "train_time_sec": 151.03296310000587,
+  "inference_time_sec": 55.561794799985364,
+  "total_time_sec": 277.51624189998256,
+  "per_defect_results": {
+    "crack": 0.5,
+    "cut": 0.5,
+    "hole": 0.5,
+    "print": 0.5
+  },
+  "checkpoint_path": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints\\experiments\\padim_hazelnut\\padim_hazelnut.pth",
+  "config": {
+    "dataset_root": "C:\\Users\\khaa5\\industrial-visual-anomaly-detection\\data\\mvtec_ad",
+    "category": "hazelnut",
+    "image_size": 256,
+    "batch_size": 32,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints",
+    "output_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\outputs",
+    "model": {
+      "name": "padim",
+      "backbone": "resnet18",
+      "layers_to_extract": [
+        "layer1",
+        "layer2",
+        "layer3"
+      ],
+      "num_features": 100,
+      "epsilon": 0.01
+    }
+  },
+  "num_fit_samples": 313,
+  "num_calibration_samples": 78,
+  "calibration_split": 0.2,
+  "calibration_seed": 42
+}

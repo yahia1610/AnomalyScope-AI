@@ -1,0 +1,9 @@
+dataset_root: "./data/mvtec_anomaly_detection"
+category: "bottle"
+image_size: 256
+batch_size: 32
+num_workers: 0  # Windows compatibility
+seed: 42
+device: "auto"  # auto-detect CPU/GPU
+checkpoint_dir: "./checkpoints"
+output_dir: "./outputs"

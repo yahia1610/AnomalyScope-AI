@@ -1,0 +1,50 @@
+{
+  "model_name": "PatchCore",
+  "category": "bottle",
+  "image_auroc": 1.0,
+  "pixel_auroc": 0.9870503451302598,
+  "aupro": 0.9185567018122619,
+  "threshold": 15.808720269203187,
+  "threshold_fpr": 0.023809523809523808,
+  "threshold_precision": 1.0,
+  "threshold_recall": 1.0,
+  "threshold_f1": 1.0,
+  "threshold_accuracy": 1.0,
+  "num_train_samples": 209,
+  "num_test_samples": 83,
+  "train_time_sec": 441.35056710001663,
+  "inference_time_sec": 144.19077670000843,
+  "total_time_sec": 678.197629399976,
+  "per_defect_results": {
+    "broken_large": 0.5,
+    "broken_small": 0.5,
+    "contamination": 0.5
+  },
+  "checkpoint_path": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints\\experiments\\patchcore_bottle\\patchcore_bottle.pth",
+  "config": {
+    "dataset_root": "C:\\Users\\khaa5\\industrial-visual-anomaly-detection\\data\\mvtec_ad",
+    "category": "bottle",
+    "image_size": 256,
+    "batch_size": 32,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints",
+    "output_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\outputs",
+    "model": {
+      "name": "patchcore",
+      "backbone": "wide_resnet50_2",
+      "layers_to_extract": [
+        "layer2",
+        "layer3"
+      ],
+      "coreset_ratio": 0.01,
+      "num_neighbors": 9,
+      "pool_size": 3
+    }
+  },
+  "num_fit_samples": 167,
+  "num_calibration_samples": 42,
+  "calibration_split": 0.2,
+  "calibration_seed": 42
+}

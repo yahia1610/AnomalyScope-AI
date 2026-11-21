@@ -1,0 +1,4 @@
+# Git LFS tracking for model checkpoints.
+# Final *.pth checkpoints are stored in Git LFS (large binary files).
+# Recovery checkpoints (*.recovery.pth) are git-ignored and never committed.
+*.pth filter=lfs diff=lfs merge=lfs -text

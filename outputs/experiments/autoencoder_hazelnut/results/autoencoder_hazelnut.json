@@ -1,0 +1,55 @@
+{
+  "model_name": "Autoencoder",
+  "category": "hazelnut",
+  "image_auroc": 0.9753571428571429,
+  "pixel_auroc": 0.9788036716306522,
+  "aupro": 0.8143789686485741,
+  "threshold": 0.1949694762378931,
+  "threshold_fpr": 0.01282051282051282,
+  "threshold_precision": 1.0,
+  "threshold_recall": 0.7285714285714285,
+  "threshold_f1": 0.8429752066115702,
+  "threshold_accuracy": 0.8272727272727273,
+  "num_train_samples": 391,
+  "num_test_samples": 110,
+  "train_time_sec": 21713.031286599988,
+  "inference_time_sec": 36.188992799958214,
+  "total_time_sec": 21841.664103800023,
+  "per_defect_results": {
+    "crack": 0.5,
+    "cut": 0.5,
+    "hole": 0.5,
+    "print": 0.5
+  },
+  "checkpoint_path": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints\\experiments\\autoencoder_hazelnut\\autoencoder_hazelnut.pth",
+  "config": {
+    "dataset_root": "C:\\Users\\khaa5\\industrial-visual-anomaly-detection\\data\\mvtec_ad",
+    "category": "hazelnut",
+    "image_size": 256,
+    "batch_size": 32,
+    "num_workers": 0,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\checkpoints",
+    "output_dir": "D:\\New folder (2)\\Downloads\\AnomalyScope-AI\\outputs",
+    "model": {
+      "name": "autoencoder",
+      "latent_channels": 256,
+      "encoder_channels": [
+        32,
+        64,
+        128,
+        256
+      ],
+      "learning_rate": 0.0001,
+      "weight_decay": 1e-05,
+      "epochs": 200,
+      "scheduler_step": 50,
+      "scheduler_gamma": 0.5
+    }
+  },
+  "num_fit_samples": 313,
+  "num_calibration_samples": 78,
+  "calibration_split": 0.2,
+  "calibration_seed": 42
+}
